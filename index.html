@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demeures du Maroc — la Villa Casablanca, une demeure privée d'exception. Réservez en direct, sans frais de plateforme." />
+  <title>Demeures du Maroc — Villa Casablanca</title>
+
+  <!-- ============================================================
+       FONTS — High-contrast serif (Cormorant Garamond) for display,
+       wide-tracked sans (Inter) for body. Preconnect for speed.
+  ============================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- ============================================================
+       PRELOADER — brief curtain reveal so the hero lands clean
+  ============================================================= -->
+  <div class="preloader" data-preloader>
+    <span class="preloader__mark">D·M</span>
+  </div>
+
+  <!-- ============================================================
+       FLOATING NAVIGATION
+       Villa name (left) · Menu toggle (right) → full-screen overlay
+  ============================================================= -->
+  <header class="nav" data-nav>
+    <a href="#estate" class="nav__brand">Demeures&nbsp;du&nbsp;Maroc</a>
+
+    <button class="nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="menu-overlay">
+      <span class="nav__toggle-label">Menu</span>
+      <span class="nav__toggle-icon" aria-hidden="true">
+        <span></span><span></span>
+      </span>
+    </button>
+  </header>
+
+  <!-- Full-screen menu overlay -->
+  <nav class="menu" id="menu-overlay" data-menu aria-hidden="true">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#estate" data-menu-link><span>01</span>La Demeure</a></li>
+      <li class="menu__item"><a href="#experience" data-menu-link><span>02</span>L'Expérience</a></li>
+      <li class="menu__item"><a href="#amenities" data-menu-link><span>03</span>Les Prestations</a></li>
+      <li class="menu__item"><a href="#tour" data-menu-link><span>04</span>Visite Cinématique</a></li>
+      <li class="menu__item"><a href="#gallery" data-menu-link><span>05</span>La Galerie</a></li>
+      <li class="menu__item"><a href="#inquire" data-menu-link><span>06</span>Réserver</a></li>
+    </ul>
+    <div class="menu__foot">
+      <p>Réservation Directe · Sans Frais de Plateforme</p>
+      <a href="mailto:reservations@villacasablanca.ma">reservations@villacasablanca.ma</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================
+         01 · THE ESTATE — Immersive cinematic hero
+         >> DROP YOUR KLING AI DRONE VIDEO IN THE <source> BELOW <<
+    ============================================================= -->
+    <!-- A tall scroll track (data-scroll-video) provides the distance to scrub
+         through; .hero__sticky pins the frame while the video timeline tracks
+         your scroll. Tune the scrub length via --hero-scroll in the CSS. -->
+    <section class="hero" id="estate" data-scroll-video>
+      <div class="hero__sticky">
+        <div class="hero__media">
+          <video
+            class="hero__video"
+            data-scrub
+            muted
+            playsinline
+            preload="auto"
+            poster="ReadyImgs/Gemini_Generated_Image_f9lhotf9lhotf9lh.png"
+          >
+            <!-- All-keyframe re-encode for smooth scroll-scrubbing (see README) -->
+            <source src="HeroOnScrollVideo-scrub.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__scrim"></div>
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-reveal>Demeure Privée · Casablanca, Maroc</p>
+          <h1 class="hero__title">
+            <span class="reveal-mask"><span data-reveal-line>Là où l'horizon</span></span>
+            <span class="reveal-mask"><span data-reveal-line>devient votre</span></span>
+            <span class="reveal-mask"><span data-reveal-line>adresse <em>privée</em>.</span></span>
+          </h1>
+        </div>
+
+        <a href="#experience" class="hero__cue" aria-label="Défiler pour découvrir">
+          <span>Défiler</span>
+          <span class="hero__cue-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         02 · THE EXPERIENCE — Asymmetrical 60/40 split
+         Parallax image panel beside an editorial text block
+    ============================================================= -->
+    <section class="experience" id="experience">
+      <div class="experience__media" data-parallax-scope>
+        <div class="experience__media-inner" data-parallax="0.12">
+          <img
+            src="ReadyImgs/Gemini_Generated_Image_2x1e9w2x1e9w2x1e.png"
+            alt="Warm living room opening onto the illuminated pool at dusk"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="experience__text">
+        <p class="section-index" data-reveal>02 — L'Expérience</p>
+        <h2 class="display" data-reveal>
+          Une demeure composée<br />de lumière et de silence.
+        </h2>
+        <p class="lede" data-reveal>
+          Sept suites. Une seule liste d'invités — la vôtre. La Villa Casablanca
+          a été conçue comme un sanctuaire où l'architecture se fond dans le
+          paysage, et chaque heure se façonne entièrement autour de votre arrivée.
+        </p>
+        <p class="body" data-reveal>
+          De la brume de l'aube sur le bassin à débordement aux dîners aux
+          chandelles issus des jardins de la demeure, rien n'est standardisé.
+          Tout est anticipé avant même d'être demandé.
+        </p>
+        <a href="#inquire" class="btn-magnetic" data-magnetic>
+          <span class="btn-magnetic__fill"></span>
+          <span class="btn-magnetic__label">Demander les Disponibilités</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         03 · AMENITIES — Asymmetrical editorial grid
+    ============================================================= -->
+    <section class="amenities" id="amenities">
+      <header class="amenities__head">
+        <p class="section-index" data-reveal>03 — Les Prestations</p>
+        <h2 class="display display--lg" data-reveal>Au-delà<br />du Séjour</h2>
+      </header>
+
+      <ul class="amenities__grid">
+        <li class="amenity amenity--a" data-reveal>
+          <span class="amenity__no">01</span>
+          <h3 class="amenity__title">Bassin à Débordement</h3>
+          <p class="amenity__desc">
+            Un bassin miroir de 25 mètres au cœur du jardin, chauffé toute
+            l'année et illuminé pour les baignades nocturnes.
+          </p>
+        </li>
+        <li class="amenity amenity--b" data-reveal>
+          <span class="amenity__no">02</span>
+          <h3 class="amenity__title">Chef Privé</h3>
+          <p class="amenity__desc">
+            Une cuisine de formation Michelin à votre discrétion — menus de
+            saison, accords de cave et petit-déjeuner servi où que vous vous éveilliez.
+          </p>
+        </li>
+        <li class="amenity amenity--c" data-reveal>
+          <span class="amenity__no">03</span>
+          <h3 class="amenity__title">Héliport Privé</h3>
+          <p class="amenity__desc">
+            Arrivez au-dessus de la circulation. Transferts directs depuis
+            l'aéroport Mohammed V et Marrakech, orchestrés par votre concierge dédié.
+          </p>
+        </li>
+        <li class="amenity amenity--d" data-reveal>
+          <span class="amenity__no">04</span>
+          <h3 class="amenity__title">Spa &amp; Hammam</h3>
+          <p class="amenity__desc">
+            Une aile bien-être en sous-sol — hammam de marbre, bain froid et
+            thérapeutes à domicile sur demande.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         04 · CINEMATIC TOUR — Dedicated HD video player slot
+         >> EMBED YOUR INTERIOR WALKTHROUGH PLAYER HERE <<
+    ============================================================= -->
+    <section class="tour" id="tour" data-parallax-scope>
+      <div class="tour__head">
+        <p class="section-index" data-reveal>04 — Visite Cinématique</p>
+        <h2 class="display" data-reveal>Entrez,<br />sans hâte.</h2>
+      </div>
+
+      <figure class="tour__frame" data-reveal data-parallax="0.06">
+        <video
+          class="tour__video"
+          controls
+          preload="metadata"
+          poster="ReadyImgs/Gemini_Generated_Image_f9lhotf9lhotf9lh.png"
+        >
+          <!-- Replace with your HD interior walkthrough -->
+          <source src="assets/interior-tour.mp4" type="video/mp4" />
+        </video>
+        <button class="tour__play" data-tour-play aria-label="Lancer la visite cinématique">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+        </button>
+        <figcaption class="tour__caption">Visite Intérieure · 4K · 3 min</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============================================================
+         05 · GALLERY — Horizontal-scroll editorial track
+    ============================================================= -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__intro">
+        <p class="section-index" data-reveal>05 — La Galerie</p>
+        <h2 class="display" data-reveal>Instantanés<br />de la demeure.</h2>
+        <p class="gallery__hint" data-reveal>Glisser · Défiler →</p>
+      </div>
+
+      <div class="gallery__track" data-gallery>
+        <figure class="gallery__item gallery__item--tall">
+          <img src="ReadyImgs/Gemini_Generated_Image_d9g67sd9g67sd9g6.png" alt="L'entrée illuminée de la villa au crépuscule" loading="lazy" />
+          <figcaption>L'Arrivée</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide">
+          <img src="ReadyImgs/Gemini_Generated_Image_2x1e9w2x1e9w2x1e.png" alt="Le salon ouvert sur la piscine" loading="lazy" />
+          <figcaption>Le Salon</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--tall">
+          <img src="ReadyImgs/Gemini_Generated_Image_f9lhotf9lhotf9lh.png" alt="La villa et la piscine au crépuscule" loading="lazy" />
+          <figcaption>Le Miroir d'Eau</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         06 · DIRECT INQUIRY — Floating-label form, no boxes
+    ============================================================= -->
+    <section class="inquire" id="inquire">
+      <div class="inquire__aside">
+        <p class="section-index" data-reveal>06 — Réservation Directe</p>
+        <h2 class="display display--lg" data-reveal>Entamons la<br />conversation.</h2>
+        <p class="inquire__note" data-reveal>
+          <span>Réservez en Direct.</span> Sans Frais de Plateforme.
+        </p>
+        <p class="body" data-reveal>
+          Les réservations sont privées et sur demande. Indiquez vos dates et
+          notre directeur de la demeure vous répondra personnellement sous 24 heures.
+        </p>
+      </div>
+
+      <form class="form" data-form novalidate>
+        <div class="field" data-reveal>
+          <input class="field__input" type="text" id="name" name="name" placeholder=" " required />
+          <label class="field__label" for="name">Nom Complet</label>
+          <span class="field__line"></span>
+        </div>
+
+        <div class="field" data-reveal>
+          <input class="field__input" type="email" id="email" name="email" placeholder=" " required />
+          <label class="field__label" for="email">Adresse E-mail</label>
+          <span class="field__line"></span>
+        </div>
+
+        <div class="field" data-reveal>
+          <input class="field__input" type="text" id="dates" name="dates" placeholder=" "
+                 onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required />
+          <label class="field__label" for="dates">Dates Souhaitées</label>
+          <span class="field__line"></span>
+        </div>
+
+        <div class="field field--area" data-reveal>
+          <textarea class="field__input" id="message" name="message" rows="3" placeholder=" "></textarea>
+          <label class="field__label" for="message">Quelques Mots</label>
+          <span class="field__line"></span>
+        </div>
+
+        <button type="submit" class="btn-magnetic btn-magnetic--solid" data-magnetic data-reveal>
+          <span class="btn-magnetic__fill"></span>
+          <span class="btn-magnetic__label">Envoyer la Demande</span>
+        </button>
+
+        <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================= -->
+  <footer class="footer">
+    <div class="footer__brand">Villa&nbsp;Casablanca</div>
+    <div class="footer__meta">
+      <span>Casablanca, Maroc</span>
+      <span>© 2026 — Réservé en Direct</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS — GSAP + ScrollTrigger (CDN) then our modular JS.
+       'defer' keeps parse non-blocking; main.js degrades gracefully
+       if GSAP fails to load (IntersectionObserver fallback).
+  ============================================================= -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
